@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-
+import contact from "../../asset/contact.png"
 export default function ContactUsPage() {
   const [formData, setFormData] = useState({
     name: "",
@@ -89,7 +89,7 @@ export default function ContactUsPage() {
                 <br />
                 <span className="relative">
                   Help
-                  <div className="absolute -bottom-2 left-0 w-20 h-2 bg-[#cddc39]"></div>
+                  <div className="absolute -bottom-2 left-0 w-20 h-2 bg-[#FC821F]"></div>
                 </span>
               </h1>
               <p className="text-[#0B2D59] text-sm leading-relaxed">
@@ -108,7 +108,7 @@ export default function ContactUsPage() {
                     type="text"
                     value={formData.name}
                     onChange={(e) => handleInputChange("name", e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#cddc39] focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
                     required
                   />
                 </div>
@@ -118,7 +118,7 @@ export default function ContactUsPage() {
                     type="email"
                     value={formData.email}
                     onChange={(e) => handleInputChange("email", e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#cddc39] focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
                     required
                   />
                 </div>
@@ -132,30 +132,30 @@ export default function ContactUsPage() {
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => handleInputChange("phone", e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#cddc39] focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
                     required
                   />
                 </div>
-                <div>
+                {/* <div>
                   <label className="block text-[#0B2D59] text-sm font-medium mb-2">How did we find you?</label>
                   <input
                     type="text"
                     value={formData.howDidWeFind}
                     onChange={(e) => handleInputChange("howDidWeFind", e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#cddc39] focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
                   />
-                </div>
+                </div> */}
               </div>
 
               {/* Age and Year Row */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-[#0B2D59] text-sm font-medium mb-2">How old are you now?</label>
                   <input
                     type="text"
                     value={formData.currentAge}
                     onChange={(e) => handleInputChange("currentAge", e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#cddc39] focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -164,20 +164,20 @@ export default function ContactUsPage() {
                     type="text"
                     value={formData.yearItHappened}
                     onChange={(e) => handleInputChange("yearItHappened", e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#cddc39] focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
                   />
                 </div>
-              </div>
+              </div> */}
 
               {/* Where and State Row */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-[#0B2D59] text-sm font-medium mb-2">Where did it happen?</label>
                   <input
                     type="text"
                     value={formData.whereItHappened}
                     onChange={(e) => handleInputChange("whereItHappened", e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#cddc39] focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
                   />
                 </div>
                 <div>
@@ -187,7 +187,7 @@ export default function ContactUsPage() {
                   <select 
                     value={formData.state}
                     onChange={(e) => handleInputChange("state", e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#cddc39] focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
                     required
                   >
                     <option value="">Please select a state</option>
@@ -198,21 +198,21 @@ export default function ContactUsPage() {
                     ))}
                   </select>
                 </div>
-              </div>
+              </div> */}
 
               {/* Know Individual */}
-              <div>
+              {/* <div>
                 <label className="block text-[#0B2D59] text-sm font-medium mb-2">How do you know the individual?</label>
                 <input
                   type="text"
                   value={formData.knowIndividual}
                   onChange={(e) => handleInputChange("knowIndividual", e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#cddc39] focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
                 />
-              </div>
+              </div> */}
 
               {/* Additional Info */}
-              <div>
+              {/* <div>
                 <p className="text-[#0B2D59] text-sm mb-2">
                   If you feel comfortable, please tell us more details about what happened and what type of assistance
                   you're seeking.
@@ -220,7 +220,19 @@ export default function ContactUsPage() {
                 <textarea
                   value={formData.additionalInfo}
                   onChange={(e) => handleInputChange("additionalInfo", e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm min-h-[120px] resize-none focus:outline-none focus:ring-2 focus:ring-[#cddc39] focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm min-h-[120px] resize-none focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
+                  placeholder=""
+                />
+              </div> */}
+
+              <div>
+                <p className="text-[#0B2D59] text-sm mb-2">
+                  Message/ Inquiry
+                </p>
+                <textarea
+                  value={formData.additionalInfo}
+                  onChange={(e) => handleInputChange("additionalInfo", e.target.value)}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm min-h-[120px] resize-none focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
                   placeholder=""
                 />
               </div>
@@ -232,18 +244,18 @@ export default function ContactUsPage() {
                   id="privacy"
                   checked={formData.agreeToPrivacy}
                   onChange={(e) => handleInputChange("agreeToPrivacy", e.target.checked)}
-                  className="mt-1 h-4 w-4 text-[#cddc39] focus:ring-[#cddc39] border-gray-300 rounded"
+                  className="mt-1 h-4 w-4 text-[#FC821F] focus:ring-[#FC821F] border-gray-300 rounded"
                 />
                 <label htmlFor="privacy" className="text-xs text-[#0B2D59] leading-relaxed">
                   I agree to{" "}
                   <a href="#" className="text-blue-600 underline">
-                    Helping Survivors Privacy Policy
+                    Belief Marketing Enterprise Privacy Policy
                   </a>
                   . By completing this form, I agree to{" "}
                   <a href="#" className="text-blue-600 underline">
-                    Helping Survivors Privacy Policy
-                  </a>
-                  . Helping Survivors may connect me with a law firm to discuss the merits of my potential case. I agree
+                    Belief Marketing Enterprise Privacy Policy
+                  </a> &nbsp;
+                  Belief Marketing Enterprise may connect me with a law firm to discuss the merits of my potential case. I agree
                   to be contacted via phone, email, and/or text message directly by a law firm.
                 </label>
               </div>
@@ -251,35 +263,23 @@ export default function ContactUsPage() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-[#cddc39] hover:bg-[#c0ca33] text-black font-medium py-3 text-sm rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#cddc39] focus:ring-offset-2"
+                className="w-full bg-[#FC821F] text-[#0B2D59] px-8 py-4 text-lg font-semibold 
+                     hover:bg-[#0B2D59] hover:text-white transition-colors duration-200focus:ring-offset-2"
               >
                 Submit
               </button>
             </form>
           </div>
 
-          {/* Right Column - Image and Text */}
           <div className="relative flex flex-col items-center lg:items-end space-y-6">
-            {/* Yellow Badge */}
-            <div className="absolute top-0 left-1/2 lg:left-0 transform -translate-x-1/2 lg:translate-x-0 z-10">
-              <div className="w-20 h-20 bg-[#cddc39] rounded-full flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-[10px] font-bold text-black leading-tight">
-                    HELPING
-                    <br />
-                    SURVIVORS
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            
             <div className="h-24 lg:h-32"></div>
 
             <div className="relative flex justify-center w-full">
               <div className="w-64 h-80 lg:w-80 lg:h-96 relative bg-gray-200 rounded-lg overflow-hidden">
                 <img
-                  src="https://via.placeholder.com/320x320/4285f4/ffffff?text=Google"
-                  alt="Dummy Google image"
+                  src={contact}
+                  alt="image"
                   className="object-cover w-full h-full"
                 />
               </div>

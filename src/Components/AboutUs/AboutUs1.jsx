@@ -1,3 +1,5 @@
+// import imag1st from "../../imag1st.jpg"
+
 export default function AboutUs1() {
     return (
       <div className="min-h-screen flex items-center justify-center p-4 md:p-8" style={{ backgroundColor: '#F4F0E3' }}>
@@ -79,7 +81,7 @@ export default function AboutUs1() {
           <div className="relative">
             <div className="relative">
               <img
-                src="https://plus.unsplash.com/premium_photo-1661715812379-23d652805042?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                // src={imag1st}
                 alt="Diverse group of survivors and community members standing together"
                 className="w-full h-auto rounded-lg"
               />

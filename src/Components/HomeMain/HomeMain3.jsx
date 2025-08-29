@@ -27,34 +27,32 @@ export default function Home3() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
-  {faqs.map((faq, index) => (
-    <div key={index} className="flex items-start gap-4 ml-[15%]">
-      <div className="flex-shrink-0">
-        <div className="w-8 h-8 bg-[#FC821F] rounded-full flex items-center justify-center">
-          <span className="text-white font-bold text-lg">
-            {index + 1}
-          </span>
+          {faqs.map((faq, index) => (
+            <div key={index} className="flex items-start gap-4 ml-[15%]">
+              <div className="flex-shrink-0">
+                <div className="w-8 h-8 bg-[#FC821F] rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">
+                    {index + 1}
+                  </span>
+                </div>
+              </div>
+              <div className="flex-1">
+                <p
+                  className="text-[21px] text-[#0A2427] leading-relaxed"
+                  style={{ fontFamily: 'Avenir Book, Avenir, sans-serif' }}
+                >
+                  {faq.question}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
-      </div>
-      <div className="flex-1">
-        <p
-          className="text-[21px] text-[#0A2427] leading-relaxed"
-          style={{ fontFamily: 'Avenir Book, Avenir, sans-serif' }}
-        >
-          {faq.question}
-        </p>
-      </div>
-    </div>
-  ))}
-</div>
 
         <div className="flex items-center justify-center mt-5">
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="px-8 py-4 text-lg font-semibold transition-colors duration-200"
-              style={{
-                backgroundColor: '#FC821F',
-                color: '#0A2427'
-              }}>
+            <button className="bg-[#FC821F] text-[#0B2D59] px-8 py-4 text-lg font-semibold 
+                     hover:bg-[#0B2D59] hover:text-white transition-colors duration-200"
+            >
               Let’s Grow Your Firm
             </button>
           </div>
