@@ -23,7 +23,7 @@ export default function Home4() {
           <Card className="bg-white text-gray-800 h-full shadow-lg">
             <CardContent className="p-6 flex flex-col h-full">
               <div className="w-16 h-16 bg-[#c3f53c] rounded-full flex items-center justify-center mb-4 mx-auto">
-                <img src={one} alt="" />
+                <img src={six} alt="" />
               </div>
               <h3 className="text-xl font-bold text-center mb-4 text-gray-800">
                 Car Accidents
@@ -99,7 +99,7 @@ export default function Home4() {
           <Card className="bg-white text-gray-800 h-full shadow-lg">
             <CardContent className="p-6 flex flex-col h-full">
               <div className="w-16 h-16 bg-[#c3f53c] rounded-full flex items-center justify-center mb-4 mx-auto">
-                <img src={six} alt="" />
+                <img src={one} alt="" />
               </div>
               <h3 className="text-xl font-bold text-center mb-4 text-gray-800">
                 Commercial Vehicle Accidents

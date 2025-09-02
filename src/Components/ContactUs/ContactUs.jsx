@@ -147,84 +147,6 @@ export default function ContactUsPage() {
                 </div> */}
               </div>
 
-              {/* Age and Year Row */}
-              {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-[#0B2D59] text-sm font-medium mb-2">How old are you now?</label>
-                  <input
-                    type="text"
-                    value={formData.currentAge}
-                    onChange={(e) => handleInputChange("currentAge", e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label className="block text-[#0B2D59] text-sm font-medium mb-2">What year did it happen?</label>
-                  <input
-                    type="text"
-                    value={formData.yearItHappened}
-                    onChange={(e) => handleInputChange("yearItHappened", e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
-                  />
-                </div>
-              </div> */}
-
-              {/* Where and State Row */}
-              {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-[#0B2D59] text-sm font-medium mb-2">Where did it happen?</label>
-                  <input
-                    type="text"
-                    value={formData.whereItHappened}
-                    onChange={(e) => handleInputChange("whereItHappened", e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label className="block text-[#0B2D59] text-sm font-medium mb-2">
-                    What state did it happen in? *
-                  </label>
-                  <select 
-                    value={formData.state}
-                    onChange={(e) => handleInputChange("state", e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
-                    required
-                  >
-                    <option value="">Please select a state</option>
-                    {states.map((state) => (
-                      <option key={state} value={state}>
-                        {state}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </div> */}
-
-              {/* Know Individual */}
-              {/* <div>
-                <label className="block text-[#0B2D59] text-sm font-medium mb-2">How do you know the individual?</label>
-                <input
-                  type="text"
-                  value={formData.knowIndividual}
-                  onChange={(e) => handleInputChange("knowIndividual", e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
-                />
-              </div> */}
-
-              {/* Additional Info */}
-              {/* <div>
-                <p className="text-[#0B2D59] text-sm mb-2">
-                  If you feel comfortable, please tell us more details about what happened and what type of assistance
-                  you're seeking.
-                </p>
-                <textarea
-                  value={formData.additionalInfo}
-                  onChange={(e) => handleInputChange("additionalInfo", e.target.value)}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white text-sm min-h-[120px] resize-none focus:outline-none focus:ring-2 focus:ring-[#FC821F] focus:border-transparent"
-                  placeholder=""
-                />
-              </div> */}
-
               <div>
                 <p className="text-[#0B2D59] text-sm mb-2">
                   Message/ Inquiry
@@ -248,7 +170,7 @@ export default function ContactUsPage() {
                 />
                 <label htmlFor="privacy" className="text-xs text-[#0B2D59] leading-relaxed">
                   I agree to{" "}
-                  <a href="#" className="text-blue-600 underline">
+                  <a href="#" className="text-blue-600 underline" >
                     Belief Marketing Enterprise Privacy Policy
                   </a>
                   . By completing this form, I agree to{" "}
